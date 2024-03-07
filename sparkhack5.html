@@ -97,7 +97,7 @@
                     url: 'https://reciclapi-garbage-detection.p.rapidapi.com/predict',
                     headers: {
                         'content-type': 'application/json',
-                        'X-RapidAPI-Key': '79744834a4msh7c065d28eadf9e9p150bd9jsn6837cd933f5f',
+                        'X-RapidAPI-Key': 'b7afa04e01msh933374f635ec69bp146fa7jsn34aef220ab25',
                         'X-RapidAPI-Host': 'reciclapi-garbage-detection.p.rapidapi.com'
                     },
                     data: {
@@ -112,7 +112,7 @@
                         // resultDiv.innerHTML = <p>Detected Garbage: ${JSON.stringify(response.data)}</p>;
                         let Classification = response.data
                         let s = JSON.stringify(Classification[0].class)
-                        resultDiv.innerHTML = <p>Garbage classified as ${s}</p>
+                        resultDiv.innerHTML = `<p>Garbage classified as ${s}</p>`
                         let bodyElement = document.body;
                         let ele = document.getElementById('result');
                         console.log(s);
